@@ -1,0 +1,264 @@
+import {BsGithub, BsLinkedin, BsTwitterX} from "react-icons/bs";
+import {BiX, BiMenu} from 'react-icons/bi';
+import { useState } from 'react';
+import '../nav.css';
+import { useRef } from "react";
+
+import './Hero';
+
+
+
+
+
+
+
+
+
+// const [isOpen, setIsOpen] = useState(false);
+
+// const menuOpen = () => {
+//   setIsOpen(!isOpen)
+// }
+
+// return (
+//   <nav className="fixed top-0 z-10 flex w-full items-center 
+//   justify-between border-b border-b-gray-800 bg-black/70
+//   px-16 py-6 text-white backdrop-blur-md 
+//   md:justify-evenly">
+
+//     <a href="#Home" className="bg-gradient-to-r from-blue-500 to-pink-500
+//     bg-clip-text text-transparent opacity-100
+//     text-3xl font-semibold transition-all duration-300
+//     hover:opacity-100 ">
+//       Hassan
+//     </a>
+
+//     <ul className="hidden md:flex gap-10">
+//       <a href="#Home" className="cursor-pointer opacity-70
+//       transition-all duration-300 hover:opacity-100
+//       ">
+//         <li>Home</li>
+//       </a>
+
+//       <a href="#Projects" className="cursor-pointer opacity-70
+//       transition-all duration-300 hover:opacity-100
+//       ">
+//         <li>Projects</li>
+//       </a>
+
+//       <a href="#Tech" className="cursor-pointer opacity-70
+//       transition-all duration-300 hover:opacity-100
+//       ">
+//         <li>Tech</li>
+//       </a>
+
+//       <a href="#Contact" className="cursor-pointer opacity-70
+//       transition-all duration-300 hover:opacity-100
+//       ">
+//         <li>Contact</li>
+//       </a>
+
+
+//     </ul>
+
+
+//     <ul className="hidden md:flex gap-5">
+//       <li className="cursor-pointer text-1xl opacity-70
+//       transition-all duration-300 hover:text-red-500
+//     hover:opacity-100">
+//       <BsLinkedin/>
+//     </li>
+//     <li className="cursor-pointer text-1xl opacity-70
+//       transition-all duration-300 hover:text-red-500
+//     hover:opacity-100">
+//       <BsTwitterX/>
+//     </li>
+//     <li className="cursor-pointer text-1xl opacity-70
+//       transition-all duration-300 hover:text-red-500
+//     hover:opacity-100">
+//       <BsGithub/>
+//     </li>
+//     </ul>
+
+
+
+//   {isOpen ? (
+//     <BiX className= "block md:hidden text-4xl cursor-pointer transition-all duration-500" onClick = {menuOpen}/>
+//  ) : (
+//   <BiMenu className= "block md:hidden text-4xl cursor-pointer transition-all duration-500" onClick = {menuOpen}/>
+//  )}
+
+//  {isOpen && (
+//   <div className={`magic${isOpen ? 'block' : 'hidden'} transition-all duration-500 `}>
+
+//     <ul className="flex flex-col gap-8">
+//     <a href="#Home" className="cursor-pointer opacity-70
+//       transition-all duration-300 hover:opacity-100
+//       ">
+//         <li>Home</li>
+//       </a>
+
+//       <a href="#Projects" className="cursor-pointer opacity-70
+//       transition-all duration-300 hover:opacity-100
+//       ">
+//         <li>Projects</li>
+//       </a>
+
+//       <a href="#Tech" className="cursor-pointer opacity-70
+//       transition-all duration-300 hover:opacity-100
+//       ">
+//         <li>Tech</li>
+//       </a>
+
+//       <a href="#Contact" className="cursor-pointer opacity-70
+//       transition-all duration-300 hover:opacity-100
+//       ">
+//         <li>Contact</li>
+//       </a>
+//     </ul>
+//     <ul className="flex flex-wrap gap-5">
+//       <li className="cursor-pointer text-1xl opacity-70
+//       transition-all duration-300 hover:text-red-500
+//     hover:opacity-100">
+//       <BsLinkedin/>
+//     </li>
+//     <li className="cursor-pointer text-1xl opacity-70
+//       transition-all duration-300 hover:text-red-500
+//     hover:opacity-100">
+//       <BsTwitterX/>
+//     </li>
+//     <li className="cursor-pointer text-1xl opacity-70
+//       transition-all duration-300 hover:text-red-500
+//     hover:opacity-100">
+//       <BsGithub/>
+//     </li>
+//     </ul>
+//  </div>
+// )} 
+  
+//   </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const Navbar = () => {
+
+  const list = document.querySelectorAll(".list");
+  function activeLink() {
+      list.forEach((item) =>
+      item.classList.remove('active'));
+      this.classList.add('active');
+  }
+  list.forEach((item) =>
+  item.addEventListener('click',activeLink));
+
+
+
+  
+
+
+  return (
+    <main className="">
+
+      <nav className="fixed top-0 left-0 z-10 w-full flex items-center 
+  justify-between border-b border-b-gray-800 bg-black/70
+  px-16 py-6 text-white backdrop-blur-md 
+  md:justify-evenly">
+
+    <a href="#Home" className="bg-gradient-to-r from-blue-500 to-pink-500
+    bg-clip-text text-transparent opacity-100
+    text-3xl font-semibold transition-all duration-300
+    hover:opacity-100 ">
+      Hassan
+    </a>
+
+    <ul className="md:flex flex-row gap-5">
+      <li className="cursor-pointer text-1xl opacity-70
+      transition-all duration-300 hover:text-red-500
+    hover:opacity-100">
+        <BsLinkedin/>
+      </li>
+      <li className="cursor-pointer text-1xl opacity-70
+      transition-all duration-300 hover:text-red-500
+    hover:opacity-100">
+        <BsTwitterX/>
+      </li>
+      <li className="cursor-pointer text-1xl opacity-70
+      transition-all duration-300 hover:text-red-500
+    hover:opacity-100">
+        <BsGithub/>
+      </li>
+    </ul>
+</nav>
+
+
+
+    <div className="navigation ">
+      
+    <ul>
+        <li className="list active">
+            <a href="#Home">
+                <span className="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span className="text text-red-300">Home</span>
+                <span className="circle"></span>
+            </a>
+        </li>
+        <li className="list">
+            <a href="#Projects">
+                <span className="icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span className="text text-red-300">Projects</span>
+                <span className="circle"></span>
+            </a>
+        </li>
+        <li className="list">
+            <a href="#Contact">
+                <span className="icon">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                </span>
+                <span className="text text-red-300">Contact</span>
+                <span className="circle"></span>
+            </a>
+        </li>
+        <div className="indicator"></div>
+    </ul>
+    
+</div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../nav.js"></script>
+  </main>
+  )
+}
+
+
+
+
+export default Navbar
