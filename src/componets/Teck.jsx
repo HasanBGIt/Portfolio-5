@@ -32,7 +32,7 @@ const Teck = () => {
       transition={{duration:0.5}}
       >
             <BiLogoPython className="cursor-pointer text-[180px] text-yellow-500
-         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px] animate-bounce focus:animate-none hover:animate-none inline-flex"/>
         </motion.div>
         
         <motion.div
@@ -43,7 +43,7 @@ const Teck = () => {
 
         >
             <BiLogoJavascript className="cursor-pointer text-[180px] text-green-500
-         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px] animate-bounce focus:animate-none hover:animate-none inline-flex"/>
         </motion.div>
 
         <motion.div
@@ -54,7 +54,7 @@ const Teck = () => {
         
         >
             <BiLogoReact className="cursor-pointer text-[180px] text-blue-500
-         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px] animate-bounce focus:animate-none hover:animate-none inline-flex"/>
         </motion.div>
 
         <motion.div
@@ -65,7 +65,7 @@ const Teck = () => {
         
         >
             <BiLogoTailwindCss className="cursor-pointer text-[180px] text-sky-500
-         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px] animate-bounce focus:animate-none hover:animate-none inline-flex"/>
         </motion.div>
 
         <motion.div
@@ -76,7 +76,7 @@ const Teck = () => {
         
         >
             <BiLogoJava className="cursor-pointer text-[180px] text-lime-100
-       motion.  transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
+       motion.  transition-all duration-300 hover:-translate-y-5 lg:text-[120px] animate-bounce focus:animate-none hover:animate-none inline-flex"/>
         </motion.div>
 
         <motion.div
@@ -87,7 +87,7 @@ const Teck = () => {
         
         >
             <BiLogoHtml5 className="cursor-pointer text-[180px] text-red-500
-         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px] animate-bounce focus:animate-none hover:animate-none inline-flex"/>
         </motion.div>
 
         <motion.div
@@ -98,7 +98,7 @@ const Teck = () => {
         
         >
             <BiLogoCss3 className="cursor-pointer text-[180px] text-blue-900
-         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px] animate-bounce focus:animate-none hover:animate-none inline-flex"/>
         </motion.div>
 
         <motion.div
@@ -109,7 +109,7 @@ const Teck = () => {
         
         >
             <BiLogoSass className="cursor-pointer text-[180px] text-pink-500
-         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px] animate-bounce focus:animate-none hover:animate-none inline-flex"/>
         </motion.div>
 
       </div>

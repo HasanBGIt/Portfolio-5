@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import { div } from "framer-motion/client";
+
 import image1 from "/public/1.png";
 import image2 from "/public/2.png";
 import image3 from "/public/3.png";
 import image4 from "/public/4.png";
 import image5 from "/public/5.png";
-
 import {motion} from 'framer-motion';
 
 
@@ -47,8 +46,14 @@ const projectsData = [
 
 
 
-
-
+const imagee = document.querySelectorAll('.imagee');
+function activeLink() {
+  imagee.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+imagee.forEach((item) =>
+item.addEventListener('click',activeLink));
 
 const ProjectsCard = ({projects}) => {
   const variants = {
@@ -62,9 +67,16 @@ const ProjectsCard = ({projects}) => {
     initial = "hidden"
     whileInView="visible"
     transition={{duration:0.5}}
-    className="flex flex-col items-center gap-12 lg:flex-row lg:gap-24">
-      <img src={projects.image} alt="" className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 lg:w-[300px]" />
-      
+    className=" flex flex-col items-center gap-12 lg:flex-row lg:gap-24">
+
+
+
+
+      <img src={projects.image} alt="" className="relative w-full cursor-pointer rounded-2xl transition-all duration-300 
+      hover:scale-105 lg:w-[300px]
+       hover:shadow-[6px_9px_76px_37px_#231659] hover:blur-sm hover:active " />
+
+
 
       <div
       className="flex flex-col gap-5">
@@ -77,7 +89,8 @@ const ProjectsCard = ({projects}) => {
           <div className="flex flex-wrap gap-5">
             {
               projects.technologies.map((tech,index) => (
-                <span key={index} className="rounded-lg bg-black p-3 text-3xl lg:text-xl">
+                <span key={index} className="rounded-lg bg-black p-3 text-3xl lg:text-xl transition-all 
+                duration-300 hover:shadow-[6px_9px_76px_37px_#685d99] hover:scale-105">
                   {tech}
                 </span>
               ))

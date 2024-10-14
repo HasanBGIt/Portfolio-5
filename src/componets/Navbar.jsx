@@ -1,8 +1,6 @@
 import {BsGithub, BsLinkedin, BsTwitterX} from "react-icons/bs";
-import {BiX, BiMenu} from 'react-icons/bi';
 import { useState } from 'react';
 import '../nav.css';
-import { useRef } from "react";
 import { useEffect } from 'react';
 
 import './Hero';
@@ -200,6 +198,24 @@ const Navbar = () => {
         </a>
 
         <ul className="md:flex flex-row gap-5">
+          <li className="cursor-pointer text-1xl opacity-70
+            transition-all duration-300 hover:text-red-500
+            hover:opacity-100 text-4xl lg:text-3xl">
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </li>
           <li className="cursor-pointer text-1xl opacity-70
             transition-all duration-300 hover:text-red-500
             hover:opacity-100 text-4xl lg:text-3xl">

@@ -1,20 +1,54 @@
 import image from '/public/png-clipart-black-boy-cartoon-american-girl-s-child-face-thumbnail.png';
 import {motion} from "framer-motion";
 import "../nav";
+import "../index.css"
+import { TypeAnimation } from 'react-type-animation';
+
 const Hero = () => {
-  const ScrollReveal = ({children}) =>{
-    return (
-    <motion.div
-    initial = {{opacity:0, y:100}}
-    whileInView={{opacity:1, y:0}}
-    viewport={{once:true}}
-    transition={{duration:0.8}}
-    >
- 
-     {children}
-    </motion.div>
-    )
- }
+
+
+
+
+
+  // const words = ["Hassan Barmandah "];
+  // let i = 0;
+  // let j = 0;
+  // let currentWord = "";
+  // let isDeleting = false;
+  
+  // function type() {
+  //   currentWord = words[i];
+  //   if (isDeleting) {
+  //     document.getElementById("name").textContent = currentWord.substring(0, j-1);
+  //     j--;
+  //     if (j == 0) {
+  //       isDeleting = false;
+  //       i++;
+  //       if (i == words.length) {
+  //         i = 0;
+  //       }
+  //     }
+  //   } else {
+  //     document.getElementById("name").textContent = currentWord.substring(0, j+1);
+  //     j++;
+  //     if (j == currentWord.length) {
+  //       isDeleting = true;
+  //     }
+  //   }
+  //   setTimeout(type, 700);
+  // }
+
+
+
+
+
+
+
+
+
+
+
+
  const variants = {
   hidden:{opacity:0, y:50},
   visible:{opacity:1 , y:0}
@@ -60,7 +94,20 @@ const Hero = () => {
     
     className='bg-gradient-to-r from-blue-500 to-pink-500
       bg-clip-text text-transparent
-      text-5xl font-light md:text-7xl'>Hassan Barmandah</motion.h1>
+      font-light py-[30px]'> 
+      <TypeAnimation className='text-6xl lg:text-5xl'
+        sequence={[
+          'My name is Hassan Barmandah',
+          1000,
+          "I'm Sophomore Software Engineer at UQU",
+          1000,
+        ]}
+        wrapper="span"
+        speed={50}
+        style={{display: 'inline-block', gap: "5px" }}
+        repeat={Infinity}
+      />
+       </motion.h1>
     <motion.h3 
     variants={variants}
     initial = "hidden"
@@ -75,7 +122,7 @@ const Hero = () => {
     whileInView="visible"
     transition={{duration:0.5}}
     
-    className='text-pretty text-3xl lg:text-sm text-gray-100
+    className='text-pretty text-3xl lg:text-2xl text-gray-100
     '>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla velit laboriosam sapiente autem repudiandae doloremque natus. Sit 
       harum quibusdam aperiam? Labore hic cum officiis corrupti possimus rem expedita amet aliquam.
