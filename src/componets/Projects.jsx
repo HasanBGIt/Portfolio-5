@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 
+import { div } from "framer-motion/client";
 import image1 from "/public/1.png";
 import image2 from "/public/2.png";
 import image3 from "/public/3.png";
@@ -45,40 +46,38 @@ const projectsData = [
 
 
 
-const ScrollReveal = ({children}) =>{
-   return (
-   <motion.div
-   initial = {{opacity:0, y:100}}
-   whileInView={{opacity:1, y:0}}
-   viewport={{once:true}}
-   transition={{duration:0.8}}
-   >
 
-    {children}
-   </motion.div>
-   )
-}
 
 
 
 const ProjectsCard = ({projects}) => {
+  const variants = {
+    hidden:{opacity:0, y:50},
+    visible:{opacity:1 , y:0}
+  }
   return(
-    <ScrollReveal>
-    <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
-      <img src={projects.image} alt="" className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px]" />
+    
+    <motion.div
+    variants={variants}
+    initial = "hidden"
+    whileInView="visible"
+    transition={{duration:0.5}}
+    className="flex flex-col items-center gap-12 lg:flex-row lg:gap-24">
+      <img src={projects.image} alt="" className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 lg:w-[300px]" />
       
 
-      <div className="flex flex-col gap-5">
+      <div
+      className="flex flex-col gap-5">
 
           <div className="flex flex-col gap-3">
-            <div className="text-xl font-semibold">{projects.title}</div>
-            <p className="text-gray-400">{projects.description}</p>
+            <div className="text-4xl font-semibold lg:text-xl">{projects.title}</div>
+            <p className="text-gray-400 lg:text-xl text-3xl">{projects.description}</p>
           </div>
 
           <div className="flex flex-wrap gap-5">
             {
               projects.technologies.map((tech,index) => (
-                <span key={index} className="rounded-lg bg-black p-3">
+                <span key={index} className="rounded-lg bg-black p-3 text-3xl lg:text-xl">
                   {tech}
                 </span>
               ))
@@ -90,8 +89,8 @@ const ProjectsCard = ({projects}) => {
           </div>
       </div>
       
-    </div>
-    </ScrollReveal>
+    </motion.div>
+    
     
   )
 }
@@ -103,16 +102,24 @@ const ProjectsCard = ({projects}) => {
 
 
 const Projects = () => {
+  const variants = {
+    hidden:{opacity:0, y:50},
+    visible:{opacity:1 , y:0}
+  }
   return (
-    
     <div id="Projects" className="flex min-h-screen w-full flex-col items-center justify-center
     gap-15 p-4 md:px14 md:py-24">
 
-      <ScrollReveal>
-          <h1 className="text-4xl font-light text-white md:text-6xl">
+      
+          <motion.h1
+          variants={variants}
+          initial = "hidden"
+          whileInView="visible"
+          transition={{duration:0.5}}
+          
+          className="text-8xl font-light text-white lg:text-6xl py-[150px] ">
           My Projects
-        </h1>
-      </ScrollReveal>
+        </motion.h1>
 
     <div className="flex w-full max-w-[1000px] flex-col gap-16 text-white">
       {
@@ -122,6 +129,8 @@ const Projects = () => {
       }
     </div>
     </div>
+    
+      
   )
 }
 

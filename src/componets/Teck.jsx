@@ -19,7 +19,7 @@ const Teck = () => {
     transition={{duration:0.5}}
 
     
-    className="text-4xl font-light text-white md:text-6xl
+    className="text-8xl font-light text-white lg:text-6xl
     ">Technologies</motion.h1>
 
 
@@ -31,9 +31,8 @@ const Teck = () => {
       whileInView="visible"
       transition={{duration:0.5}}
       >
-            <BiLogoPython className="cursor-pointer text-[80px] text-yellow-500
-         transition-all duration-300 hover:-translate-y-5 
-           sm:text-[100px] md:text-[120px]"/>
+            <BiLogoPython className="cursor-pointer text-[180px] text-yellow-500
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
         </motion.div>
         
         <motion.div
@@ -43,9 +42,8 @@ const Teck = () => {
         transition={{duration:0.5}}
 
         >
-            <BiLogoJavascript className="cursor-pointer text-[80px] text-green-500
-         transition-all duration-300 hover:-translate-y-5 
-           sm:text-[100px] md:text-[120px]"/>
+            <BiLogoJavascript className="cursor-pointer text-[180px] text-green-500
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
         </motion.div>
 
         <motion.div
@@ -55,9 +53,8 @@ const Teck = () => {
         transition={{duration:0.5}}
         
         >
-            <BiLogoReact className="cursor-pointer text-[80px] text-blue-500
-         transition-all duration-300 hover:-translate-y-5 
-           sm:text-[100px] md:text-[120px]"/>
+            <BiLogoReact className="cursor-pointer text-[180px] text-blue-500
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
         </motion.div>
 
         <motion.div
@@ -67,9 +64,8 @@ const Teck = () => {
         transition={{duration:0.5}}
         
         >
-            <BiLogoTailwindCss className="cursor-pointer text-[80px] text-sky-500
-         transition-all duration-300 hover:-translate-y-5 
-           sm:text-[100px] md:text-[120px]"/>
+            <BiLogoTailwindCss className="cursor-pointer text-[180px] text-sky-500
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
         </motion.div>
 
         <motion.div
@@ -79,9 +75,8 @@ const Teck = () => {
         transition={{duration:0.5}}
         
         >
-            <BiLogoJava className="cursor-pointer text-[80px] text-lime-100
-       motion.  transition-all duration-300 hover:-translate-y-5 
-           sm:text-[100px] md:text-[120px]"/>
+            <BiLogoJava className="cursor-pointer text-[180px] text-lime-100
+       motion.  transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
         </motion.div>
 
         <motion.div
@@ -91,9 +86,8 @@ const Teck = () => {
         transition={{duration:0.5}}
         
         >
-            <BiLogoHtml5 className="cursor-pointer text-[80px] text-red-500
-         transition-all duration-300 hover:-translate-y-5 
-           sm:text-[100px] md:text-[120px]"/>
+            <BiLogoHtml5 className="cursor-pointer text-[180px] text-red-500
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
         </motion.div>
 
         <motion.div
@@ -103,9 +97,8 @@ const Teck = () => {
         transition={{duration:0.5}}
         
         >
-            <BiLogoCss3 className="cursor-pointer text-[80px] text-blue-900
-         transition-all duration-300 hover:-translate-y-5 
-           sm:text-[100px] md:text-[120px]"/>
+            <BiLogoCss3 className="cursor-pointer text-[180px] text-blue-900
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
         </motion.div>
 
         <motion.div
@@ -115,9 +108,8 @@ const Teck = () => {
         transition={{duration:0.5}}
         
         >
-            <BiLogoSass className="cursor-pointer text-[80px] text-pink-500
-         transition-all duration-300 hover:-translate-y-5 
-           sm:text-[100px] md:text-[120px]"/>
+            <BiLogoSass className="cursor-pointer text-[180px] text-pink-500
+         transition-all duration-300 hover:-translate-y-5 lg:text-[120px]"/>
         </motion.div>
 
       </div>
