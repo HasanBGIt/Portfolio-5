@@ -1,4 +1,4 @@
-import image from '/public/png-clipart-black-boy-cartoon-american-girl-s-child-face-thumbnail.png';
+import Myimage from '../assets/Person-Without-the-background.png';
 import {motion} from "framer-motion";
 import "../nav";
 import "../index.css"
@@ -79,7 +79,7 @@ const Hero = () => {
       transition={{duration:0.5}}
 
       className='flex justify-center items-center'>
-        <img src={image} className='w-[600px] cursor-pointer
+        <img src={Myimage} className='w-[600px] cursor-pointer
         rounded-full shadow-xl shadow-indigo-900 justify-center items-center
         transition-all duration-300 hover:-translate-y-5 
         hover:scale-185 hover:shadow-2xl hover:shadow-indigo-600
@@ -124,8 +124,7 @@ const Hero = () => {
     
     className='text-pretty text-3xl lg:text-2xl text-gray-100
     '>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla velit laboriosam sapiente autem repudiandae doloremque natus. Sit 
-      harum quibusdam aperiam? Labore hic cum officiis corrupti possimus rem expedita amet aliquam.
+      I’m a sophomore studying Software Engineering at the University of Umm Al-Qura in Makkah, Saudi Arabia. Specialized in AI, and I'm interested in front-end development and app development. I enjoy working on building apps and exploring new technologies to create exciting projects.
     </motion.p>
    </motion.div>
    <script src='../nav.js'></script>

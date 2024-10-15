@@ -1,44 +1,41 @@
 /* eslint-disable react/prop-types */
 
 
-import image1 from "/public/1.png";
-import image2 from "/public/2.png";
-import image3 from "/public/3.png";
-import image4 from "/public/4.png";
-import image5 from "/public/5.png";
+import image1 from "../assets/portfolio.png";
+import image2 from "../assets/passgenerator.png";
+import image3 from "../assets/Editor.png"
+import image4 from "../assets/CoffeShop.png";
 import {motion} from 'framer-motion';
 
 
 const projectsData = [
   {
     image: image1,
-    title: "Project name",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elitre qui neque. Ipsa doloribus voluptatum nam tempore.",
+    title: "Portfolio Vr3",
+    description: "That is one of my good portfolio I that have done, I used here a pure JavaScript, HTML and CSS  ",
     technologies: ["HTML", "CSS", "JavaScript"],
+    links:"https://hassan45b.github.io/Portfoliovr3/",
   },
   {
     image: image2,
-    title: "Project name",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elitre qui neque. Ipsa doloribus voluptatum nam tempore.",
+    title: "Password Generator",
+    description: "Simple website to make a random password from your choice, I used here a pure JavaScript, HTML and CSS",
     technologies: ["HTML", "CSS", "JavaScript"],
+    links:"https://hassan45b.github.io/PassGenerator/",
   },
   {
     image: image3,
-    title: "Project name",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elitre qui neque. Ipsa doloribus voluptatum nam tempore.",
+    title: "Online Editor",
+    description: "Simple Editor website..you can edit your picture and download it, I used here a pure JavaScript, HTML and CSS",
     technologies: ["HTML", "CSS", "JavaScript"],
+    links:"https://hassan45b.github.io/Editor/",
   },
   {
     image: image4,
-    title: "Project name",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elitre qui neque. Ipsa doloribus voluptatum nam tempore.",
+    title: "Coffee Shop",
+    description: "Simple Coffee shop website using pure CSS, HTML and JavaScript",
     technologies: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    image: image5,
-    title: "Project name",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elitre qui neque. Ipsa doloribus voluptatum nam tempore.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    links:"https://hassan45b.github.io/CoffeeShop/",
   }
   
 ]
@@ -74,7 +71,7 @@ const ProjectsCard = ({projects}) => {
 
       <img src={projects.image} alt="" className="relative w-full cursor-pointer rounded-2xl transition-all duration-300 
       hover:scale-105 lg:w-[300px]
-       hover:shadow-[6px_9px_76px_37px_#231659] hover:blur-sm hover:active " />
+       hover:shadow-[6px_9px_76px_37px_#231659] hover:active " />
 
 
 
@@ -84,6 +81,10 @@ const ProjectsCard = ({projects}) => {
           <div className="flex flex-col gap-3">
             <div className="text-4xl font-semibold lg:text-xl">{projects.title}</div>
             <p className="text-gray-400 lg:text-xl text-3xl">{projects.description}</p>
+            <a href={projects.links} className="text-nowrap rounded-lg border border-indigo-600 
+        bg-black px-5 py-3 lg:text-lg text-3xl font-bold text-white shadow-indigo-700
+        transition-all duration-300 hover:-translate-y-2
+        hover:shadow-xl hover:shadow-indigo-600 justify-center items-center flex lg:my-2 my-4"> Click Here</a>
           </div>
 
           <div className="flex flex-wrap gap-5">
@@ -132,7 +133,7 @@ const Projects = () => {
           
           className="text-8xl font-light lg:text-6xl
     bg-gradient-to-r from-blue-500 to-pink-500
-      bg-clip-text text-transparent pb-[150px] ">
+      bg-clip-text text-transparent py-[150px] ">
           My Projects
         </motion.h1>
 

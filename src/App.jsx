@@ -4,6 +4,7 @@ import Contact from './componets/Contact';
 import Projects from './componets/Projects';
 import Tech from './componets/Teck';
 import TimeLine from '../src/componets/Timeline';
+// import LoadingPage from './componets/LoadingPage';
 import './index.css';
 import { useEffect } from 'react';
 
@@ -30,8 +31,11 @@ export default function App() {
     };
   }, []);
 
+  
+
 
   return( <>
+
   <div className="cursor-dot boxx" id="data-cursor-dot"></div>
   <div className="cursor-outline" id="data-cursor-outline"></div>
   <div className="fixed -z-10 min-h-screen w-full
@@ -51,7 +55,6 @@ export default function App() {
 				<li></li>
 			</ul>
 		</div>
-
 
   <main className="flex flex-col items-center px-4 md:px-8 lg:px-16 !scroll-smooth" >
        <Navbar/>

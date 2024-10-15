@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 .navigation {
     position: fixed;
-    width: 280px;
+    width: 290px;
     height: 70px;
     background: linear-gradient(45deg, #103452, #561027);
     display: flex;
