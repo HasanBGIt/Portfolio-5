@@ -201,24 +201,6 @@ const Navbar = () => {
           <li className="cursor-pointer text-1xl opacity-70
             transition-all duration-300 hover:text-red-500
             hover:opacity-100 text-4xl lg:text-3xl">
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </li>
-          <li className="cursor-pointer text-1xl opacity-70
-            transition-all duration-300 hover:text-red-500
-            hover:opacity-100 text-4xl lg:text-3xl">
            <a href="https://www.linkedin.com/in/hassan-hb/"> 
             <BsLinkedin />
             </a>
