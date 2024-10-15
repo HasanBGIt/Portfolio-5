@@ -263,6 +263,16 @@ const Navbar = () => {
               <span className="circle"></span>
             </a>
           </li>
+          
+          <li className={`list ${activeIndex === 3 ? 'active' : ''}`} onClick={() => activeLink(3)}>
+            <a href="#Experience">
+              <span className="icon">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+              </span>
+              <span className="text text-red-300">Experience</span>
+              <span className="circle"></span>
+            </a>
+          </li>
 
           <li className={`list ${activeIndex === 2 ? 'active' : ''}`} onClick={() => activeLink(2)}>
             <a href="#Contact">
@@ -274,15 +284,6 @@ const Navbar = () => {
             </a>
           </li>
           
-          <li className={`list ${activeIndex === 3 ? 'active' : ''}`} onClick={() => activeLink(3)}>
-            <a href="#Experience">
-              <span className="icon">
-                <ion-icon name="chatbubble-outline"></ion-icon>
-              </span>
-              <span className="text text-red-300">Experience</span>
-              <span className="circle"></span>
-            </a>
-          </li>
 
           <div className="indicator"></div>
         </ul>
