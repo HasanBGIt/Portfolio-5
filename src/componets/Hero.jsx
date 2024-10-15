@@ -95,11 +95,11 @@ const Hero = () => {
     className='bg-gradient-to-r from-blue-500 to-pink-500
       bg-clip-text text-transparent
       font-light py-[30px]'> 
-      <TypeAnimation className='text-6xl lg:text-5xl'
+      <TypeAnimation className='text-6xl lg:text-5xl w-[800px]'
         sequence={[
-          'My name is Hassan Barmandah',
+          "My name is Hassan Barmandah",
           1000,
-          "I'm Sophomore Software Engineer at UQU",
+          "Software Engineer at UQU",
           1000,
         ]}
         wrapper="span"

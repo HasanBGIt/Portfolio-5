@@ -236,6 +236,7 @@ const Navbar = () => {
 
       <div className="navigation scale-[2.5] translate-x-[-50%] lg:scale-[1]">
         <ul>
+          
           <li className={`list ${activeIndex === 0 ? 'active' : ''}`} onClick={() => activeLink(0)}>
             <a href="#Home">
               <span className="icon">
@@ -245,6 +246,7 @@ const Navbar = () => {
               <span className="circle"></span>
             </a>
           </li>
+
           <li className={`list ${activeIndex === 1 ? 'active' : ''}`} onClick={() => activeLink(1)}>
             <a href="#Projects">
               <span className="icon">
@@ -254,6 +256,7 @@ const Navbar = () => {
               <span className="circle"></span>
             </a>
           </li>
+
           <li className={`list ${activeIndex === 2 ? 'active' : ''}`} onClick={() => activeLink(2)}>
             <a href="#Contact">
               <span className="icon">
@@ -263,6 +266,17 @@ const Navbar = () => {
               <span className="circle"></span>
             </a>
           </li>
+          
+          <li className={`list ${activeIndex === 3 ? 'active' : ''}`} onClick={() => activeLink(3)}>
+            <a href="#Experience">
+              <span className="icon">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+              </span>
+              <span className="text text-red-300">Experience</span>
+              <span className="circle"></span>
+            </a>
+          </li>
+
           <div className="indicator"></div>
         </ul>
       </div>

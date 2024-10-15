@@ -130,7 +130,9 @@ const Projects = () => {
           whileInView="visible"
           transition={{duration:0.5}}
           
-          className="text-8xl font-light text-white lg:text-6xl py-[150px] ">
+          className="text-8xl font-light lg:text-6xl
+    bg-gradient-to-r from-blue-500 to-pink-500
+      bg-clip-text text-transparent pb-[150px] ">
           My Projects
         </motion.h1>
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 .navigation {
     position: fixed;
-    width: 200px;
+    width: 280px;
     height: 70px;
     background: linear-gradient(45deg, #103452, #561027);
     display: flex;
@@ -17,6 +17,7 @@
 .navigation ul {
     display: flex;
     width: 350px;
+    
 }
 .navigation ul li {
     position: relative;
@@ -119,4 +120,7 @@
 }
 .navigation ul li:nth-child(3).active~.indicator {
     transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(70px * 3));
 }

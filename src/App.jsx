@@ -3,8 +3,8 @@ import Hero from './componets/Hero';
 import Contact from './componets/Contact';
 import Projects from './componets/Projects';
 import Tech from './componets/Teck';
-import './index.css'
-import typing from "./componets/Type";
+import TimeLine from '../src/componets/Timeline';
+import './index.css';
 import { useEffect } from 'react';
 
 export default function App() {
@@ -56,8 +56,8 @@ export default function App() {
   <main className="flex flex-col items-center px-4 md:px-8 lg:px-16 !scroll-smooth" >
        <Navbar/>
        <Hero/>
-       
        <Tech/>
+       <TimeLine/>
        <Projects/>
        <Contact/>
 

@@ -19,8 +19,9 @@ const Teck = () => {
     transition={{duration:0.5}}
 
     
-    className="text-8xl font-light text-white lg:text-6xl
-    ">Technologies</motion.h1>
+    className="text-8xl font-light lg:text-6xl
+    bg-gradient-to-r from-blue-500 to-pink-500
+      bg-clip-text text-transparent py-[30px]">Technologies</motion.h1>
 
 
     <div className="flex flex-wrap items-center justify-center
