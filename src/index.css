@@ -19,6 +19,10 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+  background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
+
+}
 #Home {
     scroll-margin-top: 50px; /* Adjust as needed */
   }
