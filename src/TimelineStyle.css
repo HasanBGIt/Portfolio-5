@@ -9,9 +9,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: red ;
-}
 .timeline{
     position: relative;
     max-width: 1200px;
