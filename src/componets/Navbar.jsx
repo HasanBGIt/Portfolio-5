@@ -201,7 +201,7 @@ const Navbar = () => {
           <li className="cursor-pointer text-1xl opacity-70
             transition-all duration-300 hover:text-red-500
             hover:opacity-100 text-4xl lg:text-3xl">
-           <a href="https://www.linkedin.com/in/hassan-hb/"> 
+           <a href="https://www.linkedin.com/in/hsn-hb/"> 
             <BsLinkedin />
             </a>
           </li>
@@ -209,14 +209,14 @@ const Navbar = () => {
           <li className="cursor-pointer text-1xl opacity-70
             transition-all duration-300 hover:text-red-500
             hover:opacity-100 text-4xl lg:text-3xl">
-            <a href="https://x.com/hbhsnn"> 
+            <a href="https://x.com/hsnbh4"> 
             <BsTwitterX/>
             </a>
           </li>
           <li className="cursor-pointer text-1xl opacity-70
             transition-all duration-300 hover:text-red-500
             hover:opacity-100 text-4xl lg:text-3xl">
-            <a href="https://github.com/Hassan45B"> 
+            <a href="https://github.com/HsnBGit"> 
             <BsGithub/>
             </a>
           </li>
