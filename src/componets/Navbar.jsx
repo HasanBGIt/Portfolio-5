@@ -186,7 +186,7 @@ const Navbar = () => {
 
   return (
     <main className="">
-      <nav className="fixed top-0 left-0 z-10 w-full flex items-center 
+      {/* <nav className="fixed top-0 left-0 z-10 w-full flex items-center 
         justify-between border-b border-b-gray-800 bg-black/70
         px-16 py-10 text-white backdrop-blur-md 
         md:justify-evenly sm:justify-evenly sm:py-6 md:py-6">
@@ -221,7 +221,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
       <div className="navigation scale-[2.5] translate-x-[-50%] lg:scale-[1]">
         <ul>
