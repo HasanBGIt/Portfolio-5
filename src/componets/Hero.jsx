@@ -4,6 +4,10 @@ import "../nav";
 import "../index.css"
 import { TypeAnimation } from 'react-type-animation';
 
+
+
+
+//update the hero section to make it look like this  https://www.youtube.com/watch?v=_G9bxJDoF5c&ab_channel=pinkweb
 const Hero = () => {
 
 
