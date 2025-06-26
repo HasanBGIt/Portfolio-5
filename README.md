@@ -10,3 +10,5 @@ The portfolio showcases a collection of my projects, skills, and achievements. E
 Additionally, I implemented smooth navigation and performance optimizations to ensure that the site loads quickly and works seamlessly across all devices.
 
 By building this portfolio, I aimed to create an engaging and intuitive platform where visitors can explore my work and gain insights into my expertise in front-end development, UI/UX design, and modern web technologies..
+
+![Screen](./1737676679041.jpg)
